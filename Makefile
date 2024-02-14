@@ -24,7 +24,7 @@ LDFLAGS := -O2 -Wall -Wextra
 
 CPPFLAGS := $(INCFLAGS)
 
-.PHONY: all clean run test
+.PHONY: all clean
 
 all: executable
 
@@ -45,9 +45,5 @@ $(BUILDDIR)/%.o: $(SRCDIR)/%.cpp
 
 clean:
 	rm -rf $(BUILDDIR)/*
-
-run:
-	chmod +x $(BUILDDIR)/$(TARGET)
-	$(BUILDDIR)/$(TARGET) $(ARG)
 
 -include $(DEPS)
