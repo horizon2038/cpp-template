@@ -8,7 +8,8 @@
 *.elf
 
 # Build
-build/
+/build/*
+!/build/.gitkeep
 
 # Linker output
 *.ilk
