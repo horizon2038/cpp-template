@@ -22,7 +22,7 @@ CFLAGS := -O2 -Wall -Wextra
 CXXFLAGS := -O2 -Wall -Wextra -std=c++17
 LDFLAGS := -O2 -Wall -Wextra
 
-CPPFLAGS := $(INCFLAGS)
+CPPFLAGS := $(INCFLAGS) -MMD -MP
 
 .PHONY: all clean
 
