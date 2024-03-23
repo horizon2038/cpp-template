@@ -19,7 +19,7 @@ CXX := clang++
 LD := ld.lld
 
 CFLAGS := -O2 -Wall -Wextra
-CXXFLAGS := -O2 -Wall -Wextra -std=c++17
+CXXFLAGS := -O2 -Wall -Wextra -std=c++20
 LDFLAGS := -O2 -Wall -Wextra
 
 CPPFLAGS := $(INCFLAGS) -MMD -MP
